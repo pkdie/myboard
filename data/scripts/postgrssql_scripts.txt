@@ -1,0 +1,5 @@
+docker run -d --name postgresql \
+-p 5432:5432 \
+-e TZ=Asia/Seoul \
+-v /Users/hwangseongsu/Documnets/myboard/data:/var/lib/postgresql/data \
+postgres:latest
