@@ -16,6 +16,9 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
+    - name: Create application.yml
+      run: echo "${{ secrets.APPLICATION_YML }}" > src/main/resources/application.yml
+
     - name: Set up JDK 17
       uses: actions/setup-java@v4
       with:
